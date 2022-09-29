@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Exercicio7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner std = new Scanner(System.in);
+	int x = 0;
+	System.out.println("Digite o valor : ");
+	
+	x = std.nextInt();
+	while(x!= 2002)
+		{
+		System.out.println("Senha invalida");
+		System.out.println("Digite o valor : ");
+		x = std.nextInt();
+		}
+	   System.out.println("Senha correta");
+	std.close();
+	}
+
+}
