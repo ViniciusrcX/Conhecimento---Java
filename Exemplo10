@@ -1,0 +1,35 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Lisarb {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		float val;
+		float val2;
+		Scanner str = new Scanner(System.in);
+		System.out.println("Digete seu salario : ");
+		float x;
+		x = str.nextFloat();
+		if (x == 0 || x<=2000) {
+		System.out.println("isento");
+		}
+		else if(x > 2000 || x<=3000){
+			val = x/100 * 8;
+			
+			System.out.printf("valor a pagar %.2f R$", val);
+
+		}
+		else if(x > 3000 || x<=4500)
+				{
+			val = x %18;
+			System.out.printf("valor a pagar %.2f R$", val);
+
+		}
+		else {
+			val = x%28;
+			System.out.printf("valor a pagar %.2f R$" , val);
+		}
+	}
+
+}
