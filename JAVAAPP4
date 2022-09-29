@@ -1,0 +1,58 @@
+package aplicacao;
+import java.util.Locale;
+import java.util.Scanner;
+import entidade.produtos;
+
+public class programa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner stp = new Scanner(System.in);
+		produtos po = new produtos ();
+		System.out.println("digite o nome : ");
+		po.name = stp.nextLine();
+		System.out.println("digite o nota: ");
+		po.nota1= stp.nextDouble();
+		System.out.println("digite o nota : ");
+		po.nota2= stp.nextDouble();
+		System.out.println("digite o nota: ");
+		po.nota3= stp.nextDouble();
+		System.out.println("nota final " + po.media());
+		if (po.media() < 60) {
+			System.out.println("FAILED");
+			System.out.println("n passou %.2f "+ po.gradefinal());
+			}
+			else {
+			System.out.println("PASSou");
+			}
+			stp.close();
+		}
+		
+	
+	}
+
+
+ENTIDADES
+package entidade;
+
+public class produtos {
+public double nota1;
+public double nota2;
+public double nota3;
+public String name;
+
+
+public double media() {
+return (nota1 + nota2 + nota3);
+
+} 
+public double gradefinal() {
+	if  (media() < 60) {
+		return 60.0 - gradefinal();
+		}
+	else {
+		return 0.0;
+	}
+}
+}
