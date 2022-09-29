@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class exer9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   
+    int po;
+    int gaso = 0;
+    int die = 0;
+    int aco = 0;
+
+    Scanner std = new Scanner(System.in);
+    po=std.nextInt();
+   
+    System.out.println("POSTO GASOLINA");
+    System.out.println("Digite o codigo : ");
+    po=std.nextInt();
+    while(po != 4) {
+    switch(po){
+    case 1 : po = 1;
+    		{
+              gaso = gaso + 1;
+              System.out.printf("gasolina : %i /n alcool: %i /n  diesel: %i /n ", gaso,aco , die );
+              System.out.println("Digite o codigo : ");
+            }
+    case 2 : po = 2;
+	        {
+            die = die + 1;
+			System.out.printf("gasolina : %i /n alcool: %i /n  diesel: %i /n ", gaso,aco , die);
+		    System.out.println("Digite o codigo : ");
+            }
+    case 3 : po = 3;
+         	{
+            aco = aco + 1;
+			System.out.printf("gasolina : %i /n alcool: %i /n  diesel: %i /n ", gaso,aco , die);
+		    System.out.println("Digite o codigo : ");
+            }	
+       }
+    }
+    System.out.println("FIM");
+    
+    std.close();
+	}
+
+}
