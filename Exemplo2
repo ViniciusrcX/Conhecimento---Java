@@ -1,0 +1,72 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int y = 30;
+		int x = 30 * y;
+		double resultado = y / x;
+		System.out.println(y);
+		System.out.printf("valor de y %d \n de x %d\n resultado %f", y,x,resultado).println();
+		System.out.println("Ola Mundo !");
+		
+		
+		
+		//Define a interpretacao do compilador em ingles EUA EXEMPLO : Tipo variavel Double aceita ponto US BR ACEITA VIRGULA
+		Locale.setDefault(Locale.US);
+		//Definir a biblioteca Scanner uma vez , usada para string , float , double , inteiro .
+		Scanner sc = new Scanner(System.in);
+		
+		//Definir o tipo de dado string , float , double , inteiro  que vai armazenar.
+		
+		System.out.println("Digite um nome:");
+		String z;
+		z = sc.nextLine();
+		//Tipo variavel Double aceita ponto US BR ACEITA VIRGULA
+		//NextLine le a linha toda (bom dia ) next le so a primeira palavra (bom).
+		System.out.println("Digite um numero:");
+		double h;
+		h = sc.nextDouble();
+		
+	    System.out.println("Digite um numero:");
+		int w;
+		w = sc.nextInt();
+		
+		System.out.println("Digite a letra");
+		char q;
+		q = sc.next().charAt(0);
+		
+		System.out.println("Você digitou o nome :" + z);
+		System.out.println("Você digitou o numero :" + w);
+		System.out.println("Você digitou o numero :" + h);
+		System.out.println("Você digite a letra :" + q);
+		Double B ;
+		
+		                           // funcoes matematicas 
+		
+		
+		//classe para descobrir raiza quadrade
+		B = Math.sqrt(x);
+		System.out.println("Raiz quadrada " + x + "=" + B);
+		
+		//classe para potenciacao
+		Double P;
+		P = Math.pow(x, w);
+		System.out.println(x +  "elevado a "  + w +   "=" + P);
+		
+		// valor absoluto tirar o valor negativo caso exista 
+		int g;
+		g = Math.abs(x);
+		System.out.println("Valor Absoluto" + x + "=" + P);
+		
+		sc.close();
+		
+	
+	
+	
+	}
+
+}
+
