@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class aplicativo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+	 Scanner sc = new Scanner(System.in);
+	 Locale.setDefault(Locale.US);
+	 System.out.println("tamanho vetor");
+	 int n = sc.nextInt();
+	 Double[] vect = new Double[n];
+	 
+	 for(int i=0;i<n;i++) {
+		 vect[i] = sc.nextDouble();
+		 
+		 double soma = 0;
+		 for(i = 0;i<n;i++) {
+			 soma += vect[i];
+		 }
+		 double avg = soma / n;
+		 System.out.println("valor " + avg);
+		 
+		 sc.close();
+	 }
+	}
+
+}
