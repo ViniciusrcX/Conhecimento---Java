@@ -1,0 +1,30 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class exercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Scanner src = new Scanner(System.in);
+     String produtc1 = "Computer";
+     String produtc2 = "Office Desk";
+     
+     int age = 30;
+     int code = 5290;
+     
+     char gender = 'f';
+     Locale.setDefault(Locale.US);
+     double price = 2100.0;
+     double price2 = 650.50;
+     double pricemeansure = 53.234567;
+     
+     System.out.println("PRODUTOS:");
+     System.out.println(produtc1 + "," + " whice price is $" + price);
+     System.out.println(produtc2 + "which price is $" + price2 );
+     
+     System.out.println("Record: 30 years old, code " + code  + " and gender: " + gender  );
+     
+     src.close();
+     
+	}
+
+}
