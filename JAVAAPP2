@@ -1,0 +1,44 @@
+package Aplicativo;
+import java.util.Scanner;
+
+import Entidades.produts;
+
+import java.util.Locale;
+public class Programa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner std = new Scanner(System.in);
+    
+    produts po = new produts();
+    System.out.println("Digite altura : ");
+    po.width = std.nextDouble();
+    System.out.println("e largura "); 
+    po.height = std.nextDouble();
+    
+    System.out.printf("AREA = %.2f%n", po.area());
+    System.out.printf("PERIMETER = %.2f%n", po.perimeter());
+    System.out.printf("DIAGONAL = %.2f%n", po.diagonal());
+    std.close();		
+	}
+
+}
+
+ENTIDADES
+package Entidades;
+
+public class produts {
+
+public double height;
+public double width;
+
+    public double perimeter() {
+	return  2 * (height+width);
+}
+    public double area() {
+	return height+width ;
+}
+ public double diagonal() {
+ return Math.sqrt(height*height + width*width);
+}
+}
