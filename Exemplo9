@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class exert5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sbp = new Scanner(System.in);
+		int po = 1;
+	    int x;
+		
+	    po = sbp.nextInt();
+		
+		System.out.println("digite o valor : ");
+		
+		x = sbp.nextInt();
+	
+		for(po = 1;po<=x;po+=2);{  
+	     System.out.println(x);
+	     }
+	  
+        
+		
+	}
+
+}
