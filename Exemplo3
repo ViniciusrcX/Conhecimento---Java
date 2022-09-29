@@ -1,0 +1,31 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Exemplo2 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	  Locale.setDefault(Locale.US);
+      Scanner std = new Scanner(System.in);
+      System.out.println("Digite o valor: ");
+      int x ;
+      x = std.nextInt();
+      if (x %1 == 0 ) {
+    	  
+      System.out.println(" Numero inteiro ");
+      }
+      else 
+      {
+    	  System.out.println("Numero nao inteiro");
+    	  
+      }
+      if(x %2 == 0) {
+    	  System.out.println("numero par");
+      }
+      else {
+    	  System.out.println("numero impar");
+      }
+      std.close();
+	}
+
+}
